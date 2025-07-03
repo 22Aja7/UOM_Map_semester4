@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="map.css">
+</head>
+<body>
+    <div class="map_container">
+        <canvas id="map">
+        </canvas>
+    </div>
+    <div id="PMvisible">Search place</div>
+    <div id="placeModal">
+        <input name="start_point" type="search" placeholder="Search starting point">
+        <select name="start">
+            <option readonly> choose where are you</option>
+        </select>
+        <input type="search" name="end_point" placeholder="Search destination">
+        <select name="end">
+            <option value="choose destination">Choose Destination</option>
+        </select>
+        <div style="font-size:30px;background-color:white;margin-bottom:10px;">select navigation mode
+            <input type="radio" id="navigation_walk" name="navigation_mode" checked>walk
+            <input type="radio" id="navigation_drive" name="navigation_mode">drive
+        </div>
+        <button id="map_direction">Get Directions</button>
+        <button id="Start_navigation" style="display:none;">Start navigation</button>
+        <span>close</span>
+    </div>
+    <img src="university_mumbai_jpg.jpg" id="uom" style="display:none;">
+    <img src="location-pic.png" id="loc_img" style="display:none;background-color:black;">
+    <script src="map.js"></script>
+</body>
+</html>
