@@ -1,0 +1,59 @@
+ #placeModal {
+     position: absolute;
+     padding: 50px;
+     border-radius: 10px;
+     z-index: 20;
+     top: 60px;
+     /*left: 10px;*/
+     width: 100%;
+     height: auto;
+ }
+
+ @media screen and (min-width : 1000px) {
+     #placeModal {
+         width: 50%;
+     }
+
+     #placeModal>input {
+         font-size: 12px;
+     }
+ }
+#placeModal>* {
+     display: inline-block;
+     width: 100%;
+ }
+
+ #placeModal>input,
+ button {
+     font-size: 2rem;
+     margin-bottom: 0.5rem;
+ }
+ #placeModal>span {
+     text-align: center;
+     width: 50%;
+     font-size: 2rem;
+     margin-top: 10px;
+     margin-left: 25%;
+     padding: 10px;
+     border: 1px solid red;
+     border-radius: 12px;
+ }
+ #placeModal>input+select {
+     margin-bottom: 2rem;
+     font-size: 2rem;
+ }
+ #PMvisible {
+     display: none;
+     position: absolute;
+     z-index: 2;
+     top: 5%;
+     max-width: 300px;
+     font-size: 2rem;
+     height: auto;
+     padding: 20px;
+     border-radius: 0px 10px 10px 0px;
+     background-color: #d3fff1;
+ }
+ .hidePlaceModal {
+     display: none;
+    }
