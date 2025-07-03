@@ -366,7 +366,7 @@ const graph_walk = {
     A: ["TB", "EG", "D", "ME"],
     TB: ["A", "C"],
     C: ["TB", "R", "PHB", "IDOL", "Y"],
-    Y: ["DB", "K"],
+    Y: ["DB","C", "K"],
     R: ["C", "LTB", "S"],
     PHB: ["C"],
     IDOL: ["C"],
@@ -411,7 +411,6 @@ const graph_walk = {
     NG: ["L"],
     USC: ["L"]
 };
-
 //function to find shortest path between two places.
 function bfsShortestPath(graph, start, end) {
     if (!graph[start] || !graph[end]) {
